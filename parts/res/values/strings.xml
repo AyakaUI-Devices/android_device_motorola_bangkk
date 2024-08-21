@@ -51,6 +51,13 @@
         <string name="charging_tile_discharging">Discharging</string>
         <string name="charging_tile_not_charging">Not Charging</string>
         <string name="charging_tile_error">Error</string>
+
+        <!-- Thermal Tile Strings -->
+        <string name="thermal_tile_label">Thermal Mode</string>
+        <string name="thermal_mode_default">Default Mode</string>
+        <string name="thermal_mode_performance">Performance Mode</string>
+        <string name="thermal_mode_battery_saver">Battery Saver Mode</string>
+        <string name="thermal_mode_gaming">Gaming Mode</string>
         
         <!-- Content descriptions for accessibility -->
         <string name="charging_tile_desc_charging">Charging at %1$s watts, %2$s amps, %3$s volts</string>
@@ -94,5 +101,21 @@
         <string name="charge_bypass_notification_text">Battery charging is currently bypassed</string>
         <string name="charge_bypass_smart_enabled">Smart charging bypass enabled at %d%%</string>
         <string name="charge_bypass_smart_disabled">Smart charging bypass disabled</string>
+
+        <!-- Saturation -->
+        <string name="saturation_title">Display Saturation</string>
+        <string name="saturation_summary">Control the saturation level of the display</string>
+        <string name="saturation_footer_summary">Changing the color mode in display settings will override the saturation level, requiring it to be reapplied.</string>
+
+        <!-- Image preview -->
+        <string name="image_preview_content_description">Preview</string>
+        <string name="image_preview_next_page_content_description">Next</string>
+        <string name="image_preview_previous_page_content_description">Previous</string>
+
+        <!-- Custom seekbar -->
+        <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+        <string name="custom_seekbar_default_value">by default</string>
+        <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+        <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
 </resources>

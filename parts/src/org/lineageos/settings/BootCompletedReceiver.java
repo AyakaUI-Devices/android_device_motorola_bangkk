@@ -32,6 +32,7 @@ import android.util.Log;
 import android.view.Display;
 
 import org.lineageos.settings.refreshrate.RefreshUtils;
+import org.lineageos.settings.thermal.ThermalTileService;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final String TAG = "Parts";
