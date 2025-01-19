@@ -100,6 +100,12 @@ PRODUCT_COPY_FILES += \
 $(foreach DEVICE_SKU, $(NFC_DEVICE_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.se.omapi.ese.xml)
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# BCR
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.bangkk
