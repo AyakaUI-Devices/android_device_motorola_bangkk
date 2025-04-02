@@ -24,6 +24,10 @@ $(call inherit-product, device/motorola/sm6375-common/common.mk)
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# GameBar
+PRODUCT_PACKAGES += \
+	Parts
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
