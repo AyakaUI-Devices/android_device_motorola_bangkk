@@ -32,6 +32,9 @@ import org.lineageos.settings.refreshrate.RefreshActivity;
 import org.lineageos.settings.refreshrate.RefreshTileService;
 import org.lineageos.settings.gamebar.GameBarSettingsActivity;
 import org.lineageos.settings.gamebar.GameBarTileService;
+import org.lineageos.settings.charge.ChargeActivity;
+import org.lineageos.settings.charge.ChargeQSTile;
+import org.lineageos.settings.charginginfo.ChargingInfoTileService;
 
 public final class TileHandlerActivity extends Activity {
     private static final String TAG = "TileHandlerActivity";
@@ -42,6 +45,8 @@ public final class TileHandlerActivity extends Activity {
     static {
         TILE_ACTIVITY_MAP.put(RefreshTileService.class.getName(), RefreshActivity.class);
         TILE_ACTIVITY_MAP.put(GameBarTileService.class.getName(), GameBarSettingsActivity.class);
+        TILE_ACTIVITY_MAP.put(ChargeQSTile.class.getName(), ChargeActivity.class);
+        TILE_ACTIVITY_MAP.put(ChargingInfoTileService.class.getName(), ChargeActivity.class);
     }
 
     @Override
