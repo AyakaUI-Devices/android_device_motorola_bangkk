@@ -14,6 +14,9 @@ $(call inherit-product, device/motorola/bangkk/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+DERPFEST_BUILD_TYPE := Unofficial
+WITH_GMS := true
+
 PRODUCT_NAME := lineage_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
