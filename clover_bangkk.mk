@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bangkk device
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+# Inherit some common Clover stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
-PRODUCT_NAME := custom_bangkk
+PRODUCT_NAME := clover_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
