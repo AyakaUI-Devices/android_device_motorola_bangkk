@@ -1,0 +1,9 @@
+# Google
+ro.opa.device_model_id=motorola-bangkk
+ro.opa.eligible_device=true
+
+# About Phone
+ro.infinity.soc=Snapdragon 695 5G
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080p, 120 Hz
+ro.infinity.camera=50MP + 16MP + 2MP
