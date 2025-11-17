@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: The LineageOS Project
+# Copyright (C) Yet Another AOSP Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bangkk device
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common YAAP tuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_bangkk
+PRODUCT_NAME := yaap_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
