@@ -222,9 +222,9 @@
                 <route type="mix" sink="voice_rx"
                        sources="Telephony Rx"/>
                 <route type="mix" sink="voip_tx"
-                       sources="Built-In Mic,Built-In Back Mic,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic"/>
+                       sources="Built-In Mic,Built-In Back Mic,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic,Telephony Rx"/>
                 <route type="mix" sink="primary input"
-                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,USB Device In,USB Headset In"/>
+                       sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,USB Device In,USB Headset In,Telephony Rx"/>
                 <route type="mix" sink="scc input"
                        sources="Built-In Mic,Wired Headset Mic"/>
                 <route type="mix" sink="fm input"
@@ -259,7 +259,7 @@
         <xi:include href="usb_audio_policy_configuration.xml"/>
 
         <!-- Remote Submix Audio HAL -->
-        <xi:include href="r_submix_audio_policy_configuration.xml"/>
+		<xi:include href="/vendor/etc/r_submix_audio_policy_configuration.xml"/>
         <!-- qti non-offload configuration -->
         <xi:include href="/vendor/etc/bluetooth_qti_audio_policy_configuration.xml"/>
     </modules>
@@ -267,8 +267,8 @@
 
     <!-- Volume section -->
 
-    <xi:include href="audio_policy_volumes.xml"/>
-    <xi:include href="default_volume_tables.xml"/>
+	<xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
+	<xi:include href="/vendor/etc/default_volume_tables.xml"/>
 
     <!-- End of Volume section -->
 </audioPolicyConfiguration>
