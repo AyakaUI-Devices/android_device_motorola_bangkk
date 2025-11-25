@@ -57,6 +57,9 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.nfc.sec.rc
 
+# Lineage Health
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_current_limit)
+
 # LiveDisplay
 $(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
 
