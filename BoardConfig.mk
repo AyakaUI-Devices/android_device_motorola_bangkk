@@ -50,4 +50,4 @@ BOARD_AVB_ROLLBACK_INDEX := 22
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 22
 
 # inherit from the proprietary version
--include vendor/motorola/bangkk/BoardConfigVendor.mk
+include vendor/motorola/bangkk/BoardConfigVendor.mk
