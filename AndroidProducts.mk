@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ayaka_bangkk.mk
+    $(LOCAL_DIR)/lineage_bangkk.mk
