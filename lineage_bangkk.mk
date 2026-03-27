@@ -27,11 +27,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=motorola/bangkk_g/bangkk:15/V1TCS35H.88-16-2/fd39b-8ae08d:user/release-keys \
     DeviceProduct=bangkk_g
 
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
-
-TARGET_CUSTOM_UDFPS := true
-
-WITH_GMS := true
-
-$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
-$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
