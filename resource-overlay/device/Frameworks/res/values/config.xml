@@ -4,9 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-     <!-- Whether the device supports Smart Pixels -->
-<bool name="config_supportSmartPixels">true</bool>
-     
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
