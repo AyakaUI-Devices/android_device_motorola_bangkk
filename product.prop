@@ -7,3 +7,6 @@ ro.opa.device_model_id=motorola-bangkk
 
 # Motorola
 ro.mot.build.customerid=global
+
+# Maintainer
+ro.lunaris.maintainer=ZedissP
