@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := ayaka_bangkk
+PRODUCT_NAME := lineage_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -26,3 +26,18 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="bangkk_g-user 15 V1TCS35H.88-16-2 fd39b-8ae08d release-keys MV-301" \
     BuildFingerprint=motorola/bangkk_g/bangkk:15/V1TCS35H.88-16-2/fd39b-8ae08d:user/release-keys \
     DeviceProduct=bangkk_g
+
+# Axion Flags
+TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+AXION_CAMERA_REAR_INFO := 50,8
+AXION_CAMERA_FRONT_INFO := 16
+AXION_MAINTAINER := ZedissP
+AXION_PROCESSOR := Snapdragon_695
+TARGET_NEEDS_DOZE_FIX := true
+TARGET_DOZE_TAP_PULSE_SUPPORTED ?= true
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED ?= true
+TARGET_DOZE_PICKUP_PULSE_SUPPORTED ?= true
+TARGET_DOZE_SIDE_FPS_PULSE_SUPPORTED ?= true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120

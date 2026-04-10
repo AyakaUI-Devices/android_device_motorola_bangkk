@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     SettingsResDevice \
     SystemUIResDevice \
     WifiResDevice \
-    TurboPowerOverlay
+    #TurboPowerOverlay
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -54,8 +54,9 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.nfc.sec.rc
 
+# removed to build sedona kernel 
 # LiveDisplay
-$(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
+# $(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
 
 # NFC
 PRODUCT_PACKAGES += \
