@@ -13,3 +13,6 @@ ro.surface_flinger.set_idle_timer_ms=250
 
 # Radio
 ro.vendor.radio.imei.sv=26
+
+# Performance and Scrolling
+persist.sys.perf.scroll_opt=true
