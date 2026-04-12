@@ -20,6 +20,12 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g84 5G
 
+# Ayaka Configs.
+AYAKA_MAINTAINER := whyakari
+WITH_GMS := true
+IS_OFFICIAL := true
+WITH_KSU := false
+
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
