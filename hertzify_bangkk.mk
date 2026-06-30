@@ -11,8 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bangkk device
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+# Inherit some common HertzifyOS stuff.
+$(call inherit-product, vendor/hertzify/config/common_full_phone.mk)
+-include vendor/lineage-priv/keys/keys.mk
 
 PRODUCT_NAME := ayaka_bangkk
 PRODUCT_DEVICE := bangkk
@@ -20,11 +21,7 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g84 5G
 
-# Ayaka Configs.
-AYAKA_MAINTAINER := whyakari
-WITH_GMS := true
-IS_OFFICIAL := true
-WITH_KSU := false
+WITH_KSU := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
