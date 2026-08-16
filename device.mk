@@ -24,6 +24,9 @@ $(call inherit-product, device/motorola/sm6375-common/common.mk)
 # Dolby Lunaris
 $(call inherit-product, vendor/lunaris/dolby/dolby.mk)
 
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,120)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResDevice \

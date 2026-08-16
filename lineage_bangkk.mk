@@ -11,19 +11,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bangkk device
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := ayaka_bangkk
+PRODUCT_NAME := lineage_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g84 5G
 
-# Ayaka Configs.
-AYAKA_MAINTAINER := whyakari
+# Lunaris Flags
+LUNARIS_BUILD_TYPE := Community
 WITH_GMS := true
-IS_OFFICIAL := true
+TARGET_OPTIMIZED_DEXOPT := true
+USE_REALITY_ENGINE := true
+WITH_PIXEL_LAUNCHER := false
+TARGET_USE_WALLPAPERS := false
+TARGET_USE_MAPS := false
+TARGET_USE_FILES := true
+TARGET_USE_GPHOTOS := true
+TARGET_CUSTOM_UDFPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+SURFACE_FLINGER_BOOST := true
+
+# kernel
 WITH_KSU := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
