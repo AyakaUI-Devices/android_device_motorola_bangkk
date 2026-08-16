@@ -20,13 +20,8 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'hardware/google/interfaces',
-    'hardware/google/pixel',
-    'hardware/google/pixel/pixelstats',
-    'hardware/google/pixel/power-libperfmgr',
-    'hardware/lineage/interfaces/power-libperfmgr',
-    'hardware/motorola',
     'device/motorola/bangkk',
+    'hardware/motorola',
     'vendor/motorola/sm6375-common',
     'vendor/qcom/opensource/display',
 ]
